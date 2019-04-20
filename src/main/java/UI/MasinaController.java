@@ -9,17 +9,12 @@ import javafx.stage.Stage;
 
 public class MasinaController {
 
-    public TextField txtMedicineName;
-    public TextField txtMedicineProducer;
-    public TextField txtMedicinePrice;
     public Button btnCancel;
     public Spinner spnId;
-    public CheckBox chkRecipe;
     public Button btnAdd;
     public Button btnUpdate;
     public TextField txtMasinaModel;
     public TextField txtMasinaKilomAchiz;
-    public TextField txtMasinaPrice;
     public TextField txtMasinaPretInchiriereZi;
 
 

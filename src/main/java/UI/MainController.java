@@ -60,9 +60,9 @@ public class MainController {
         Platform.runLater(() -> {
             //colProducerMedicine.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
             masinas.addAll(masinaService.getAll());
-            tblMedicines.setItems(masinas);
+            tblMasini.setItems(masinas);
             inchirieres.addAll(inchiriereService.getAll());
-            tblCardClients.setItems(inchirieres);
+            tblinchiriere.setItems(inchirieres);
 
         });
     }

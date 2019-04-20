@@ -19,8 +19,7 @@
         <TextField fx:id="txtMasinaKilomAchiz" prefHeight="25.0" prefWidth="110.0" promptText="Kilometraj Achizitie"/>
         <TextField fx:id="txtMasinaPretInchiriereZi" prefHeight="25.0" prefWidth="110.0" promptText="Pret Inchiriere zi"/>
     </HBox>
-    <Pane prefHeight="5.0" prefWidth="330.0"/>
-    <CheckBox fx:id="chkRecipe" text="Recipe"/>
+
     <Pane prefHeight="5.0" prefWidth="330.0"/>
     <HBox alignment="TOP_CENTER">
         <Button fx:id="btnUpdate" onAction="#btnUpdateClick" text="Update"/>

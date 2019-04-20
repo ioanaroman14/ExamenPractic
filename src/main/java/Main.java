@@ -29,13 +29,13 @@ public class Main extends Application {
         IValidator<Inchiriere> inchiriereValidator = new InchiriereValidator();
 
 
-        IRepository<Masina> medicinesRepository = new JsonFileRepository<>
+        IRepository<Masina> masiniRepository = new JsonFileRepository<>
                 (masinaValidator, "Masina.json", Masina.class);
-        IRepository<Inchiriere> cardsRepository = new JsonFileRepository<>
+        IRepository<Inchiriere> inchirieriRepository = new JsonFileRepository<>
                 (inchiriereValidator, "Inchiriere.json", Inchiriere.class);
 
-        MasinaService masinaService = new MasinaService(medicinesRepository);
-        InchiriereService inchiriereService = new InchiriereService(cardsRepository);
+        MasinaService masinaService = new MasinaService(masiniRepository);
+        InchiriereService inchiriereService = new InchiriereService(inchirieriRepository);
 
 
         mainController.setServices(masinaService, inchiriereService);

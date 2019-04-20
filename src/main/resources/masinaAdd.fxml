@@ -10,7 +10,7 @@
 <VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="UI.MasinaController">
     <HBox alignment="TOP_CENTER">
-        <Label text="Movie ID"/>
+        <Label text="Masina ID"/>
         <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
     </HBox>
     <Pane prefHeight="5.0" prefWidth="330.0"/>
