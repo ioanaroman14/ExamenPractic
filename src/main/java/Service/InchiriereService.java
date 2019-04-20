@@ -93,6 +93,7 @@ public class InchiriereService {
     public IRepository<Inchiriere> getRepository() {
         return repository;
     }
+ 
 }
 
 

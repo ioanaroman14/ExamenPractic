@@ -99,4 +99,16 @@
         </HBox>
     </VBox>
     </Tab>
+    <Tab>
+        <VBox alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="600.0">
+            <Button onAction="#raportKilometraj" text="Raport kilometraj " />
+
+            <Button onAction="#raportKilometraj" text="Raport venituri " />
+
+            <Button onAction="#raportKilometraj" text="Raport cerere " />
+        </VBox>
+        <graphic>
+            <Label text="Other functionalities" />
+        </graphic>
+    </Tab>
 </TabPane>

@@ -195,6 +195,9 @@ public class MainController {
 
     public void increasingByAnProcentage(ActionEvent actionEvent) {
     }
+
+    public void raportKilometraj(ActionEvent actionEvent) {
+    }
     /**public void editMedicineName(TableColumn.CellEditEvent cellEditEvent){
         Masina editedMasina = (Masina) cellEditEvent.getRowValue();
         try  {

@@ -32,9 +32,9 @@ class MasinaTest {
         masina.setKilometrajAchiz(100);
         masina.setPretInchiriereZi(200);
 
-        assertEquals("2", masina.getId());
+        assertEquals("1", masina.getId());
         assertEquals("test2", masina.getModel());
-        assertEquals(200, masina.getKilometrajAchiz());
+        assertEquals(100, masina.getKilometrajAchiz());
         assertEquals(200, masina.getPretInchiriereZi());
     }
 
@@ -42,7 +42,7 @@ class MasinaTest {
     void equalityShouldWorkCorrectly() {
         Masina masina1 = new Masina("1", "test", 100, 2);
         Masina masina2 = new Masina("1", "test", 100, 2);
-        Masina masina3 = new Masina("2", "test", 100, 2);
+        Masina masina3 = new Masina("1", "test", 100, 2);
 
         assertNotEquals(masina1, masina3);
         assertNotEquals(masina3, masina1);
@@ -56,7 +56,7 @@ class MasinaTest {
 
     @org.junit.jupiter.api.Test
     void toStringShouldReturnALongEnoughString() {
-        Masina masina1 = new Masina("2", "test", 100, 2);
+        Masina masina1 = new Masina("2", "test", 200, 2);
 
         assertTrue(masina1.toString().length() > 10);
     }
