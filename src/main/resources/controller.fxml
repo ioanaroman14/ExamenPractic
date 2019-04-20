@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.MainController">
+    <Tab>
+    <VBox alignment="TOP_CENTER">
+        <Label text="Masini:">
+            <font>
+                <Font name="System Bold" size="16.00" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER">
+        <TableView fx:id="tblMasini" editable="true" prefHeight="600.0" prefWidth="403.0">
+            <columns>
+                <TableColumn fx:id="colIdMasini" prefWidth="80.0" text="Id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colModelMasini" prefWidth="80.0" text="Model">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="model" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colKilometrajAchizitieMasini" prefWidth="80.0" text="Kilometraj Achizitie">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="kilometrajAchiz" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colPretInchiriereZi" prefWidth="80.0" text="Pret inchiriere zi">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="pretInchiriereZi" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400">
+            <Button fx:id="btnAddMasina" onAction="#btnAddMasinaClick" text="Add Masina" />
+            <Button fx:id="btnUpdateMasina" onAction="#btnUpdateMasinaClick" text="Update Masina" />
+            <Button fx:id="btnMasinaUndo" onAction="#btnMasinaUndoClick" text="Undo" />
+            <Button fx:id="btnMasinaRedo" onAction="#btnMasinaRedoClick" text="Redo" />
+        </HBox>
+    </VBox>
+        <graphic>
+            <Label text="Masina" />
+        </graphic>
+    </Tab>
+    <Tab>
+        <graphic>
+            <Label text="Inchirieri" />
+        </graphic>
+    <VBox alignment="TOP_CENTER" prefHeight="950.0" prefWidth="700.0">
+        <Label text="Clients:">
+            <font>
+                <Font name="System Bold" size="16.00" />
+            </font>
+        </Label>
+        <HBox alignment="TOP_CENTER">
+            <TableView fx:id="tblinchiriere" editable="true" prefHeight="515.0" prefWidth="600.0">
+                <columns>
+                    <TableColumn fx:id="colIdInchiriere" prefWidth="109.0" text="Id ">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colIdMasina" prefWidth="96.0" text="Id Masina">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="idMasina" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colNumberOfDays" prefWidth="116.0" text="Numar de zile">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="numberOfDays" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="colKilometriiParcursi" prefWidth="96.0" text="Kilometrii Parcursi">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="kilometriParcursi" />
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+        </TableView>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <Button onAction="#btnAddInchirieriClick" text="Add Inchiriere" />
+            <Button fx:id="btnClientUndo" onAction="#btnClientUndoClick" text="Undo" />
+            <Button fx:id="btnClientRedo" onAction="#btnClientRedoClick" text="Redo" />
+        </HBox>
+    </VBox>
+    </Tab>
+</TabPane>

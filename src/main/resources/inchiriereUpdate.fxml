@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.shape.Box?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="UI.InchiriereController">
+    <HBox alignment="TOP_CENTER">
+        <Label alignment="CENTER" text="Card ID"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350.0"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtInchiereIdMasina" promptText="Last Name"/>
+        <TextField fx:id="txtInchiriereNumberOfDays" promptText="First Name"/>
+        <TextField fx:id="txtInchiriereKilometriParcursi" promptText="First Name"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtCardCNP" promptText="CNP"/>
+    </HBox>
+    <Pane prefHeight="2.0" prefWidth="350"/>
+    <HBox alignment="TOP_CENTER">
+
+        <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+    </HBox>
+</VBox>

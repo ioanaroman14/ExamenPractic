@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="UI.MasinaController">
+    <HBox alignment="TOP_CENTER">
+        <Label text="Movie ID"/>
+        <Spinner fx:id="spnId" editable="true" initialValue="0" max="2000000000" min="0"/>
+    </HBox>
+    <Pane prefHeight="5.0" prefWidth="330.0"/>
+    <HBox alignment="TOP_CENTER">
+        <TextField fx:id="txtMasinaModel" prefHeight="25.0" prefWidth="110.0" promptText="Model"/>
+        <TextField fx:id="txtMasinaKilomAchiz" prefHeight="25.0" prefWidth="110.0" promptText="Kilometraj Achizitie"/>
+        <TextField fx:id="txtMasinaPretInchiriereZi" prefHeight="25.0" prefWidth="110.0" promptText="Pret Inchiriere zi"/>
+    </HBox>
+    <Pane prefHeight="5.0" prefWidth="330.0"/>
+    <HBox alignment="TOP_CENTER">
+        <Button fx:id="btnAdd" onAction="#btnAddClick" text="Add"/>
+        <Button fx:id="btnCancel" onAction="#btnCancelClick" text="Cancel"/>
+    </HBox>
+</VBox>
